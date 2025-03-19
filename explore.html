@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Touiteur</title>
+    <meta name="description" content="Le réseau social indispensable" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/helpers.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a style="padding: 0" id="head" href="index.html">
+        <h1 style="font-size: 5rem">Touitter</h1>
+        <img style="width: 5rem" src="./img/Pirates.svg" alt="" />
+      </a>
+      <div style="display: flex; gap: 1rem" id="login">
+        <a
+          class="animated-button"
+          href="connect.html"
+          style="background: none; color: black; border: 1px solid"
+          >Se connecter</a
+        >
+        <a class="animated-button" href="register.html">Créer un Compte</a>
+        <span style="display: none" id="logged_as"></span>
+      </div>
+    </header>
+    <section id="top">
+      <form id="touitForm">
+        <label for="name" id="nameLabel">Utilisateur :</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Pseudo"
+          required
+        />
+        <textarea
+          name="touit"
+          placeholder="Touiter"
+          style="resize: none"
+          required
+        ></textarea>
+        <p id="state"></p>
+        <button
+          class="animated-button"
+          type="submit"
+          id="submit-touit"
+          style="width: 50%; margin: auto"
+        >
+          Envoyer
+        </button>
+      </form>
+    </section>
+
+    <div id="modal" class="modal-overlay">
+      <div class="modal-box">
+        <button class="modal-close" id="close-modal">&times;</button>
+        <div class="modal-content" id="modal-content"></div>
+      </div>
+    </div>
+
+    <main id="explore">
+      <section id="left">
+        <select name="sort" id="sort-select">
+          <option value="recent" selected>Le plus récent</option>
+          <option value="old">Le plus ancien</option>
+          <option value="like">Le plus likés</option>
+          <option value="coms">Le plus commenté</option>
+        </select>
+        <article id="menu">
+          <h3 id="menu-title">Menu</h3>
+          <ul id="menu_list">
+            <li><span id="user_count"></span></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a id="open-modal" href="#">Top Touit</a></li>
+            <li><a onclick="getTouit()" href="#">Récupérer un touit</a></li>
+            <li><a href="#influ_content">Influenceurs</a></li>
+            <li><a href="#tendances_content">Tendances</a></li>
+            <li>
+              <a
+                style="display: none"
+                id="deco-btn"
+                onclick="logoutUser()"
+                href="#"
+                >Déconnexion</a
+              >
+            </li>
+          </ul>
+        </article>
+        <article style="display: none;">
+          <a href="https://mayoclinic.org/healthy-lifestyle/weight-loss/in-depth/weight-loss-plateau/art-20044615"><img src="img/pub2.jpg" alt=""
+          /></a>
+        </article>
+      </section>
+      <div id="touits"></div>
+      <section class="infos">
+        <article id="influs">
+          <h3>Influenceurs</h3>
+          <div id="influ_content">
+            <ul id="influ_list">
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </article>
+        <article id="trends">
+          <h3>Tendances</h3>
+          <div id="tendances_content">
+            <ul id="tendances_list">
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="js/func.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/config.js"></script>
+  </body>
+</html>

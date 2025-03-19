@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Touiteur</title>
+    <meta name="description" content="Le réseau social indispensable" />
+    <meta property="og:title" content="Touiteur" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:image" content="/og-image.jpg" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/helpers.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <main
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+      "
+    >
+      <div>
+        <a id="head" href="index.html">
+          <h1>Touitter</h1>
+          <img src="./img/Pirates.svg" alt="" />
+        </a>
+      </div>
+      <section class="form" title="Créer un compte">
+        <h2>Créer un compte</h2>
+        <form class="form2" action="">
+          <div class="block_form">
+            <label for="uname"><b>Username</b></label>
+            <input
+              type="text"
+              placeholder="Enter Username"
+              name="uname"
+              required
+            />
+          </div>
+          <div class="block_form">
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              required
+            />
+          </div>
+          <p style="display: none;" id="state"></p>
+          <button class="animated-button" type="submit" id="submit-create">Créer le compte</button>
+        </form>
+      </section>
+    </main>
+    <script src="js/register.js"></script>
+    <script src="js/config.js"></script>
+  </body>
+</html>
