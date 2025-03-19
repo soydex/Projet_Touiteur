@@ -57,3 +57,15 @@ My project is a web application named "Touiteur", which appears to be a social n
 
 - `.gitignore`: Specifies files to be ignored by Git.
 - `manifest.webmanifest`: Configuration file for the application's icons.
+
+
+## Images 
+
+#### Illustrations:
+
+![Page d'accueil](illustrations/accueil.png)
+![Page de connexion](illustrations/login.png)
+![Page Explore](illustrations/main_page.png)
+![Top Touits](illustrations/podium.png)
+![Page d'inscription](illustrations/register.png)
+![Menu Sort Touits](illustrations/select.png)
