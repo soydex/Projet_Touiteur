@@ -1,4 +1,3 @@
-const loginUrl = "https://touiteur.cefim-formation.org/user/login";
 const p_state = document.getElementById("state");
 
 function loginUser(username, password) {

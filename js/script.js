@@ -1,13 +1,3 @@
-const apiUrl = "https://touiteur.cefim-formation.org/";
-const apiUrllist = `https://touiteur.cefim-formation.org/list`;
-const sendTouitUrl = "https://touiteur.cefim-formation.org/send";
-const sendlikeUrl = "https://touiteur.cefim-formation.org/likes/send";
-const removelikeUrl = "https://touiteur.cefim-formation.org/likes/remove";
-const sendcomUrl = "https://touiteur.cefim-formation.org/comments/send";
-const comUrl = "https://touiteur.cefim-formation.org/comments/list";
-const influeUrl = `https://touiteur.cefim-formation.org/influencers?count=3`;
-const trendingUrl = `https://touiteur.cefim-formation.org/trending`;
-
 const logged_as = document.getElementById("logged_as");
 const nameInput = document.getElementById("name");
 const nameLabel = document.getElementById("nameLabel");

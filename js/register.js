@@ -1,5 +1,4 @@
-const registerUrl = "https://touiteur.cefim-formation.org/user/register";
-const loginUrl = "https://touiteur.cefim-formation.org/user/login";
+
 const p_state = document.getElementById("state");
 
 function registerUser(username, password) {
